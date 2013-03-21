@@ -1,0 +1,14 @@
+{
+    "name": "mapr",
+    "description": "map for objects",
+    "version": "0.0.1",
+    "keywords": [],
+    "dependencies": {
+        "manuelstofer/foreach": "*"
+    },
+    "development": {},
+    "license": "MIT",
+    "scripts": [
+        "index.js"
+    ]
+}
