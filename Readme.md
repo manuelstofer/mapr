@@ -2,7 +2,7 @@
 
 ![Build status](https://api.travis-ci.org/manuelstofer/mapr)
 
-Resolves a path in a object.
+Map object values and keys
 
 
 ## Installation
