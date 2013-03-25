@@ -6,9 +6,9 @@ module.exports = {
 };
 
 function map (obj, iterator, context) {
-    var result = {};
+    var result = obj.length? [] : {};
     each(obj, function (value, key) {
-        result [key] = iterator.call(context, value, key);
+        result[key] = iterator.call(context, value, key);
     });
     return result;
 }
@@ -16,7 +16,7 @@ function map (obj, iterator, context) {
 function kmap (obj, iterator, context) {
     var result = {};
     each(obj, function (value, key) {
-        result [iterator.call(context, key, value)] = value;
+        result[iterator.call(context, key, value)] = value;
     });
     return result;
 }

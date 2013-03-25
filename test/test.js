@@ -22,6 +22,14 @@ describe('map', function () {
         result.bla.should.equal('HELLO');
         result.example.should.equal('LOWER');
     });
+
+    it('should work with arrays', function () {
+        var obj = ['bla', 'lower'],
+            result = map(obj, toUpper);
+        chai.expect(result instanceof Array).to.be.true;
+        result[0].should.equal('BLA');
+        result[1].should.equal('LOWER');
+    });
 });
 
 describe('kmap', function () {
